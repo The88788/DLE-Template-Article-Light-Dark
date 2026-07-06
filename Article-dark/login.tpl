@@ -69,12 +69,9 @@
 </div>
 <hr>
 <div class="row g-2 text-center">
-<div class="col-4"><a class="social_btn facebook d-block" href="{facebook_url}"><i class="si si-facebook"></i></a></div>
 <div class="col-4"><a class="social_btn vk d-block" href="{vk_url}"><i class="si si-vk"></i></a></div>
-<div class="col-4"><a class="social_btn odnoklassniki d-block" href="{odnoklassniki_url}"><i class="si si-odnoklassniki"></i></a></div>
 <div class="col-4"><a class="social_btn yandex d-block" href="{yandex_url}">Я</a></div>
 <div class="col-4"><a class="social_btn googleplus d-block" href="{google_url}"><i class="si si-google"></i></a></div>
-<div class="col-4"><a class="social_btn mailru d-block" href="{mailru_url}">@</a></div>
 </div>
 </form>
 </div>
