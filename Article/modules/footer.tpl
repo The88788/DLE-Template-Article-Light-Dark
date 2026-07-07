@@ -4,7 +4,7 @@
 <div class="row d-flex align-items-center gy-4">
 
 <div class="col-md-8">
-<span class="copyright">© Copyright &copy; 2021. Разработано студией <a href="http://dle-theme.ru" target="_blank">DLE-THEME.RU</a> - All Rights Reserved.</span>
+<span class="copyright">© 2021 Разработано студией <a href="http://dle-theme.ru" target="_blank">DLE-THEME.RU</a><br>2026 Адаптация под DLE v20 и доработка - <a href="https://the88788.com" target="_blank">The88788.com</a></span>
 </div>
 
 <div class="col-md-4">

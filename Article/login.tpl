@@ -68,10 +68,11 @@
 <a href="{lostpassword-link}">Восстановить пароль</a>
 </div>
 <hr>
-<div class="row g-2 text-center">
-<div class="col-4"><a class="social_btn vk d-block" href="{vk_url}"><i class="si si-vk"></i></a></div>
-<div class="col-4"><a class="social_btn yandex d-block" href="{yandex_url}">Я</a></div>
-<div class="col-4"><a class="social_btn googleplus d-block" href="{google_url}"><i class="si si-google"></i></a></div>
+<div class="social_login_title">Вход через соцсети</div>
+<div class="social_login">
+<a class="social_icon_btn vk" href="{vk_url}" title="ВКонтакте"><img src="{THEME}/images/vk.webp" width="48" height="48" alt="ВКонтакте" loading="lazy"></a>
+<a class="social_icon_btn yandex" href="{yandex_url}" title="Яндекс ID"><img src="{THEME}/images/yandex.webp" width="48" height="48" alt="Яндекс ID" loading="lazy"></a>
+<a class="social_icon_btn google" href="{google_url}" title="Google"><img src="{THEME}/images/google.webp" width="48" height="48" alt="Google" loading="lazy"></a>
 </div>
 </form>
 </div>

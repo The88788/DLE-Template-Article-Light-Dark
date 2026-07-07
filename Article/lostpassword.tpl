@@ -14,6 +14,15 @@
 </div>
 [/recaptcha]
 
+[sec_code]
+<div class="form-group">
+<label for="sec_code">Код с картинки <span class="required">*</span></label>
+{code}
+<br><br>
+<input type="text" name="sec_code" id="sec_code" required>
+</div>
+[/sec_code]
+
 <button class="btn btn-default w-100" name="submit" type="submit">Восстановить</button>
     
 </div>

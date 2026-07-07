@@ -93,6 +93,16 @@
 </div></div>
 [/recaptcha]
 
+[sec_code]
+<div class="col-md-12">
+<div class="form-group">
+<label for="sec_code">Код с картинки</label>
+{sec_code}
+<br><br>
+<input type="text" name="sec_code" id="sec_code" required>
+</div></div>
+[/sec_code]
+
 <div class="col-md-6"><button class="btn btn-default w-100" type="submit" name="add">Отправить</button></div>
 <div class="col-md-6"><button class="btn btn-secondary w-100" onclick="preview()" type="submit" name="nview">Предпросмотр</button></div>
     

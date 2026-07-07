@@ -17,5 +17,13 @@
 {recaptcha}
 </div>
 [/recaptcha]
-    
+
+[sec_code]
+<div class="form-group mb-3">
+{sec_code}
+<br><br>
+<input type="text" name="sec_code" id="sec_code" placeholder="Код с картинки" required>
+</div>
+[/sec_code]
+
 <button name="submit" type="submit" id="submit" class="btn btn-default w-100">Отправить</button>

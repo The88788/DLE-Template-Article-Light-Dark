@@ -14,7 +14,7 @@
               
 <div class="contact-item bordered rounded d-flex align-items-center mb-4">
 <span class="icon icon-map"></span>
-<div class="details"><h6 class="mb-0 mt-0">Адрес</h6><p class="mb-0">Россия, г. Мрсква, ул. Большая, д. 101, офис 55</p></div>
+<div class="details"><h6 class="mb-0 mt-0">Адрес</h6><p class="mb-0">Россия, г. Москва, ул. Большая, д. 101, офис 55</p></div>
 </div>
 
 <div class="bg-light p-5 rounded"><div class="row">
@@ -59,6 +59,15 @@
 {recaptcha}
 </div></div>
 [/recaptcha]
+
+[sec_code]
+<div class="col-md-12"><div class="form-group">
+<label for="sec_code">Код с картинки <span class="required">*</span></label>
+{code}
+<br><br>
+<input type="text" name="sec_code" id="sec_code" required>
+</div></div>
+[/sec_code]
 
 <div class="col-md-12"><button class="btn btn-default w-100" type="submit" name="send_btn">Отправить сообщение</button></div>
     

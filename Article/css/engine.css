@@ -269,14 +269,12 @@ table.xfields{width:100%}
 .ui-c1,.ui-c2{display:inline-block;vertical-align:top}
 .ui-c1{width:30%;margin-right:1%;font-weight:500;padding-left:15px;color:#fff}
 .ui-c2{width:60%;border-left:1px solid #e7e7e7;color:#f5f5f5;padding-left:15px;font-weight:400}
-.social_btn{color:#fff;text-align:center;font-weight:500;font-size:16px;border-radius:5px;text-decoration:none;display:block;width:100%;background:#ffd8a2;padding:10px;margin-top:15px}
-.social_btn:hover{opacity:.8;color:#fff}
-.social_btn.facebook{background:#3b5998}
-.social_btn.vk{background:#5d84ae}
-.social_btn.googleplus{background:#DD4B39}
-.social_btn.yandex{background:red}
-.social_btn.mailru{background:#005ff9}
-.social_btn.odnoklassniki{background:#f93}
+.social_login_title{text-align:center;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;color:#8f9bad;margin-top:15px;margin-bottom:12px}
+.social_login{display:flex;align-items:center;justify-content:center;gap:18px}
+.social_icon_btn{display:inline-block;line-height:0;transition:transform .15s ease,opacity .15s ease}
+.social_icon_btn img{width:48px;height:48px;border-radius:50%;display:block}
+.social_icon_btn.vk img,.social_icon_btn.yandex img{width:40px;height:40px}
+.social_icon_btn:hover{transform:translateY(-3px);opacity:.85}
 .ui-dialog-buttonset button,.bbcodes,.ui-button{margin-left:10px;cursor: pointer;color: #FFF;padding: .675rem .955rem;background: #FE4F70;background: -webkit-linear-gradient(left,#FE4F70 0%,#FFA387 51%,#FE4F70 100%);background: linear-gradient(to right,#FE4F70 0%,#FFA387 51%,#FE4F70 100%);background-size: 200% auto;border: 0;border-radius: 25px;font-size: 14px;font-weight: 400;overflow: hidden;position: relative;display: inline-block;vertical-align: middle;white-space: nowrap;text-align: center;-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
 .ui-dialog-buttonset button:hover,.bbcodes:hover,.ui-button:hover{color: #FFF;background-position: right center;}
 #bottom-nav {display: block;width: 100%;}
