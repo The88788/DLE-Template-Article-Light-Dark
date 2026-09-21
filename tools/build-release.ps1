@@ -10,6 +10,7 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $sourceTemplates = Join-Path $repoRoot "DLE_$Version\templates"
 $installFile = Join-Path $repoRoot "release\INSTALL-DLE-$Version.md"
+$installHtmlTemplate = Join-Path $repoRoot 'release\INSTALL.template.html'
 $distDirectory = Join-Path $repoRoot 'dist'
 $archiveName = "Article-DLE-$Version-Light-Dark.zip"
 $archivePath = Join-Path $distDirectory $archiveName
@@ -23,12 +24,22 @@ if (-not (Test-Path -LiteralPath $installFile -PathType Leaf)) {
     throw "Installation guide not found: $installFile"
 }
 
+if (-not (Test-Path -LiteralPath $installHtmlTemplate -PathType Leaf)) {
+    throw "HTML installation template not found: $installHtmlTemplate"
+}
+
 try {
     New-Item -ItemType Directory -Path $buildDirectory | Out-Null
     Copy-Item -LiteralPath $sourceTemplates -Destination (Join-Path $buildDirectory 'templates') -Recurse
     Copy-Item -LiteralPath (Join-Path $repoRoot 'README.md') -Destination (Join-Path $buildDirectory 'README.md')
     Copy-Item -LiteralPath (Join-Path $repoRoot 'CHANGELOG.md') -Destination (Join-Path $buildDirectory 'CHANGELOG.md')
     Copy-Item -LiteralPath $installFile -Destination (Join-Path $buildDirectory 'INSTALL.md')
+    $installHtml = (Get-Content -LiteralPath $installHtmlTemplate -Raw).Replace('{{DLE_VERSION}}', $Version)
+    [System.IO.File]::WriteAllText(
+        (Join-Path $buildDirectory 'INSTALL.html'),
+        $installHtml,
+        [System.Text.UTF8Encoding]::new($false)
+    )
 
     New-Item -ItemType Directory -Path $distDirectory -Force | Out-Null
     Compress-Archive -Path (Join-Path $buildDirectory '*') -DestinationPath $archivePath -CompressionLevel Optimal -Force
