@@ -8,8 +8,8 @@
 
 Откройте раздел [Releases](https://github.com/The88788/DLE-Template-Article-Light-Dark/releases) и выберите выпуск для своей версии DataLife Engine:
 
-- `Article-DLE-20.0-Light-Dark.zip` — для DLE 20.0;
-- `Article-DLE-21.0-Light-Dark.zip` — для DLE 21.0.
+- `Article-DLE-20.0-RU-Light-Dark.zip` - русская локализация для DLE 20.0;
+- `Article-DLE-21.0-RU-Light-Dark.zip` - русская локализация для DLE 21.0.
 
 Архив находится в блоке **Assets** выбранного выпуска. Ссылки **Source code (zip)** и **Source code (tar.gz)** создаются GitHub автоматически и содержат весь репозиторий; для обычной установки шаблона они не нужны.
 
